@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.a6te.lazycoder.arduinocontroller.MainActivity">
+
+    <include layout="@layout/tool_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </include>
+
+    <ListView
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/btn_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view">
+
+    </ListView>
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="up"
+        android:onClick="up"
+        android:id="@+id/btn_up"/>
+    <Button
+        android:textAllCaps="false"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_up"
+        android:layout_toLeftOf="@+id/btn_up"
+        android:text="left "
+        android:id="@+id/btn_left"
+        android:onClick="left"/>
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_up"
+        android:layout_toRightOf="@+id/btn_up"
+        android:text="right"
+        android:id="@+id/btn_right"
+        android:onClick="right"/>
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_right"
+        android:text="down"
+        android:textAllCaps="false"
+        android:id="@+id/btn_down"
+        android:onClick="down"/>
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+        />
+    <TextView
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:text="Connecting ..."
+        android:textAllCaps="false"
+        android:id="@+id/text_connecting"/>
+</RelativeLayout>

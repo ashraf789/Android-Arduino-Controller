@@ -9,3 +9,7 @@ this app send command to arduino board then that command receive by bluetooth mo
 </b>
 #command "up","down","left","right"
 </br>
+</br>
+
+## License
+This project is licensed under the MIT License - see the [License File](LICENSE) for details
